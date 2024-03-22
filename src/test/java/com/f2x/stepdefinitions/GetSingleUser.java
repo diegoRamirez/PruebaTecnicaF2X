@@ -14,6 +14,7 @@ import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 import net.serenitybdd.screenplay.rest.interactions.Get;
 
 import static com.f2x.utils.MakeString.*;
+import static com.f2x.utils.UtilProperties.getData;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.*;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
