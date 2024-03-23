@@ -1,16 +1,30 @@
-# Getting started with Serenity and Cucumber
+# Prueba Técnica de Automatización de API para F2X
 
-Serenity BDD is a library that makes it easier to write high quality automated acceptance tests, with powerful reporting and living documentation features. It has strong support for both web testing with Selenium, and API testing using RestAssured.
+Este es un proyecto esta construido para implementar la prueba técnica de F2X que consiste en automatizar pruebas para el API REST de https://reqres.in/.
+En el, se crearon tres features con diferentes escenarios que se listan a continuación:
 
-Serenity strongly encourages good test automation design, and supports several design patterns, including classic Page Objects, the newer Lean Page Objects/ Action Classes approach, and the more sophisticated and flexible Screenplay pattern.
+### login
+Este feature contiene dos escenarios relacionados con la funcionalidad de login:
+1. Loguearse de manera exitosa con email y password
+2. Loguearse con parámetros incompletos
 
-The latest version of Serenity supports Cucumber 6.x.
+### RegisterUser
+En este feature se agregaron los escenarios concernientes al registro de usuarios así:
+1. Registro de usuarios
+2. Registro de usuarios con error
 
-## The starter project
-The best place to start with Serenity and Cucumber is to clone or download the starter project on Github ([https://github.com/serenity-bdd/serenity-cucumber-starter](https://github.com/serenity-bdd/serenity-cucumber-starter)). This project gives you a basic project setup, along with some sample tests and supporting classes. There are two versions to choose from. The master branch uses a more classic approach, using action classes and lightweight page objects, whereas the **[screenplay](https://github.com/serenity-bdd/serenity-cucumber-starter/tree/screenplay)** branch shows the same sample test implemented using Screenplay.
+### manageUser
+En este feature se encuentran  los escenarios necesarios para validar el correcto funcionamiento del CRUD de usuarios.
+Los escenarios planteados son los siguientes:
+1. Crear un nuevo usuario
+2. Editar usuario
+3. Obtener los datos de un usuario a traves de su ID
+4. Validar respuesta cuando el ID del usuario no existe
+5. Eliminar un usuario
 
-### The project directory structure
-The project has build scripts for both Maven and Gradle, and follows the standard directory structure used in most Serenity projects:
+
+### Estructura del proyecto
+El proyecto cuenta con una estructura diseñada para implementar el patron screenplay
 ```Gherkin
 src
   + main
@@ -18,8 +32,7 @@ src
     + java                        Test runners and supporting code
     + resources
       + features                  Feature files
-     + search                  Feature file subdirectories 
-             search_by_keyword.feature
+    
 ```
 
 Serenity 2.2.13 introduced integration with WebdriverManager to download webdriver binaries.
