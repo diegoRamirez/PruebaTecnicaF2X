@@ -2,7 +2,7 @@ Feature: Registro de usuarios
 
   Scenario Outline: Registrar satisfactoriamente un usuario
 
-#    Este escenario consiste registrar satisfactoriamente un usuario.
+#    Este escenario consiste en registrar satisfactoriamente un usuario.
 #    Para validar el correcto funcionamiento del servicio, se verificará que el código
 #    de respuesta sea 200 y que en el response vengan los campos Id y Token.
 
