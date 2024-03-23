@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/CreateUser.feature",
+        features = "src/test/resources/features/ManageUser.feature",
         glue = "com/f2x/stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
-public class CreateUserRunner {
+public class ManageUserRunner {
 }

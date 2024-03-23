@@ -6,4 +6,17 @@ public class MakeRequestCreateUser {
         return request;
 
     }
+
+    public static String getRequestRegister(String email, String password){
+        String request =  "{\"email\": \""+email+"\",\"password\": \""+password+"\"}";
+        return request;
+
+    }
+
+    public static String getRequestRegister(String email){
+        String request =  "{\"email\": \""+email+"\",";
+        return request;
+
+    }
+
 }

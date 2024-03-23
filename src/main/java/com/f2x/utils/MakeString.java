@@ -22,4 +22,12 @@ public class MakeString {
     public static String getStringJob(User user){
         return getData("string.job")+user.getJob();
     }
+    public static String getStringRegisterId(){return getData("string.id");
+    }
+    public static String getStringRegisterToken(){
+        return getData("string.token");
+    }
+
+
+
 }
