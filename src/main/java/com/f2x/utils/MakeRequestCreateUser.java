@@ -14,7 +14,7 @@ public class MakeRequestCreateUser {
     }
 
     public static String getRequestRegister(String email){
-        String request =  "{\"email\": \""+email+"\",";
+        String request =  "{\"email\": \""+email+"\"}";
         return request;
 
     }

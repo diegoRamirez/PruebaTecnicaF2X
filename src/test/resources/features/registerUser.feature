@@ -26,5 +26,5 @@ Feature: Registro de usuarios
     And debe retornar mensaje de error
 
     Examples:
-      |EMAIL                     |PASSWORD      |
-      |eve.holt@reqres.in        |pistol        |
+      |EMAIL                     |
+      |sydney@fife               |

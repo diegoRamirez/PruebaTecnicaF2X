@@ -51,5 +51,8 @@ public class RegisterUser {
 
     @And("debe retornar mensaje de error")
     public void debeRetornarMensajeDeError() {
+        theActorInTheSpotlight().should(
+                seeThat("El body del response", QuestionResponseBody.value(),containsString(getData("string.error.message")))
+        );
     }
 }
