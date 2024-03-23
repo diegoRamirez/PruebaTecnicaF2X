@@ -3,6 +3,7 @@ package com.f2x.stepdefinitions;
 import com.f2x.models.User;
 import com.f2x.questions.QuestionResponseBody;
 import com.f2x.questions.QuestionStatusCode;
+import com.f2x.utils.UtilProperties;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -31,7 +32,7 @@ public class CreateUser {
     @When("^ingreso los datos (.*?),(.*?)$")
     public void ingresoLosDatos(String name, String job) {
         theActorInTheSpotlight().attemptsTo(
-                Post.to("/api/users").with(request ->request.body(getRequest(name,job)))
+                Post.to(getData("path.create.user")).with(request ->request.body(getRequest(name,job)))
         );
     }
 

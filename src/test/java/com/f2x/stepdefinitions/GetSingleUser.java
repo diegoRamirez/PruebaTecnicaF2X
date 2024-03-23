@@ -35,7 +35,7 @@ public class GetSingleUser {
     @When("^realizo la consulta con el id (.*?)$")
     public void realizoLaConsultaConElId(String id) {
         theActorInTheSpotlight().attemptsTo(
-                Get.resource("/api/users/"+id)
+                Get.resource(getData("path.get.user")+id)
         );
     }
 
