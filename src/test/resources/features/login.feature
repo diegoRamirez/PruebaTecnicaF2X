@@ -14,7 +14,7 @@ Feature: Login de usuarios
       |EMAIL                     |PASSWORD      |
       |eve.holt@reqres.in        |cityslicka    |
 
-  Scenario Outline: Loguearse con credenciales no válidas
+  Scenario Outline: Loguearse con parametros incompletos
 
 #    Este escenario consiste realizar un login con parámetros incompletos y validar el mensaje de error
 
